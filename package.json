@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "test" : "npx stylelint '**/*.{css,scss}' && npx eslint . && echo everything-looks-good",
-    "fix" : "npx stylelint '**/*.{css,scss}' --fix && npx eslint . --fix && echo everything-looks-fixed"
+    "test": "npx stylelint '**/*.{css,scss}' && npx eslint . && echo everything-looks-good",
+    "fix": "npx stylelint '**/*.{css,scss}' --fix && npx eslint . --fix && echo everything-looks-fixed"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
@@ -12,5 +12,8 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "luxon": "^3.2.1"
   }
 }
