@@ -70,7 +70,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> <a href="https://shayan1234554321.github.io/Awesome-Books/">Live</a>
+> <a href="https://shayan1234554321.github.io/Awesome_Books/">Live</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

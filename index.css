@@ -55,6 +55,7 @@ header {
   padding: 10px;
   box-shadow: var(--Box-shadow-outside);
   border-radius: 7px;
+  position: relative;
 }
 
 header h1 {
@@ -76,6 +77,14 @@ header ul li {
   font-weight: 600;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+}
+
+header .time {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  opacity: 0.5;
+  font-weight: 600;
 }
 
 .listSelected {
