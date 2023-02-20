@@ -32,13 +32,13 @@ const addingBookToHtml = (Title, Author, index, books, remove) => {
     const parent = e.target.parentElement;
     const index = parent.id;
     remove(index);
-    /* eslint-disable no-use-before-define */
-    addAllBooks(books, remove);
-    localStorage.books = JSON.stringify(books);
+    const newBooks = books.filter((book) => book.title !== '');
+    localStorage.books = JSON.stringify(newBooks);
     toast.fire({
       animation: true,
       title: 'Book Removed',
     });
+    parent.remove();
   }));
   div.appendChild(span);
   div.appendChild(button);

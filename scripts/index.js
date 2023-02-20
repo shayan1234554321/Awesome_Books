@@ -36,14 +36,17 @@ const addBook = () => {
   addAllBooks(colection.books, remove);
   title.value = '';
   author.value = '';
-  localStorage.books = JSON.stringify(colection.books);
+  const books = colection.books.filter((book) => book.title !== '');
+  localStorage.books = JSON.stringify(books);
   toast.fire({
     title: 'Book Added',
   });
 };
 
-/* eslint-disable max-len */
-const currentTime = () => DateTime.now().toLocaleString({ ...DateTime.DATETIME_MED_WITH_SECONDS, hour12: true });
+const currentTime = () => {
+  const now = DateTime.now();
+  return now.toLocaleString({ ...DateTime.DATETIME_MED_WITH_SECONDS, hour12: true });
+};
 
 // ----------------- Event listners --------------------
 

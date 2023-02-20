@@ -8,6 +8,6 @@ export default class Books {
   }
 
   remove(index) {
-    this.books.splice(index, 1);
+    this.books[index] = { title: '', author: '' };
   }
 }
